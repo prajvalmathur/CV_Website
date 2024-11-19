@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Academic Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: #2196F3;
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            margin-bottom: 1.5rem;
+        }
+
+        .key-features {
+            margin-bottom: 1.5rem;
+        }
+
+        .key-features h4 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .key-features ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .key-features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .key-features li::before {
+            content: "•";
+            color: #2196F3;
+            position: absolute;
+            left: 0;
+        }
+
+        .skills-section {
+            margin-top: 1.5rem;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .skill-tag {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .project-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-title-group {
+            flex-grow: 1;
+        }
+
+        .project-timeline {
+            font-size: 0.9rem;
+            color: #1976d2;
+            background: #e3f2fd;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .project-card {
+                padding: 1.5rem;
+            }
+
+            .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Projects</h2>
+        
+        <!-- Voting System Development -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h3 class="project-title">Voting System Development</h3>
+                </div>
+                <span class="project-timeline">Sep 2023 - Dec 2023</span>
+            </div>
+            <div class="project-description">
+                <p>Developed a Java-based voting system modeled on US elections along with 2 other group members.</p>
+            </div>
+            <div class="key-features">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Implemented key Classes, Methods and Constructors</li>
+                    <li>Developed methods for ballot creation and vote tallying</li>
+                    <li>User Profile Matching</li>
+                    <li>Conducted rigorous testing and debugging</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Technologies & Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">User Authentication</span>
+                    <span class="skill-tag">Matching Algorithms</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Analysis and Visualization Project -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h3 class="project-title">Data Analysis and Visualization Project</h3>
+                </div>
+                <span class="project-timeline">Sep 2021 - Dec 2021</span>
+            </div>
+            <div class="project-description">
+                <p>Collaborated with a team to analyze and interpret a complex data set using Pandas in Python.</p>
+            </div>
+            <div class="key-features">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Effectively represented and visualized the data</li>
+                    <li>Easy to understand the Data</li>
+                    <li>Gaining meaningful insights from data</li>
+                    <li>Client Oriented Data presentation</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Technologies & Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Presentation</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Senior Capstone project AI Chatbot -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h3 class="project-title">Senior Capstone project AI Chatbot</h3>
+                </div>
+                <span class="project-timeline">Sep 2024 - Present Day</span>
+            </div>
+            <div class="project-description">
+                <p>A user-friendly AI Chatbot with a focus on security and user design.</p>
+            </div>
+            <div class="key-features">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Interactive AI Chatbot</li>
+                    <li>Control over personal information and tracking</li>
+                    <li>Personalized settings for greater usability for the general public</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Technologies & Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Express.js</span>
+                    <span class="skill-tag">OpenAI API</span>
+                    <span class="skill-tag">Speech-to-text API</span>
+                    <span class="skill-tag">Text-to-speech API</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
